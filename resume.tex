@@ -1,0 +1,288 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Hyperlink style
+\hypersetup{
+    colorlinks=false,
+    linkcolor=black,
+    urlcolor=blue,
+}
+
+% Divider
+\RequirePackage{xcolor}
+\RequirePackage{dashrule}
+\colorlet{body}{black!80!white}
+\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.5pt}{0.7ex}}\medskip}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeScholarship}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.89\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+    \vspace{0.3cm}
+}
+
+\newcommand{\resumeWorkshops}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+    \vspace{0.3cm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \textbf{\huge \hspace{-1cm} DANIEL BRITO} \\ 
+  \textbf{\hspace{-1cm} Front-end and Android developer • Visual artist • Writer} \\
+\end{center}
+
+\vspace{0.2cm}
+
+%----------Location and contacts-----------------
+\begin{tabular}{c c c c c}
+  \faMapMarker{\hspace{0.1cm} Ceará, Brazil} & \hspace{0.45cm}
+  \faGithub{\hspace{0.2cm}\href{https://danielbrito.github.io/home}{danielbrito.github.io}} & \hspace{0.45cm}
+  \faEnvelope{\hspace{0.2cm}\href{mailto:danielhbrito@outlook.com}{danielhbrito@outlook.com}} & \hspace{0.45cm}
+  \faLinkedin{\hspace{0.2cm}\href{https://www.linkedin.com/in/daniel-brito}{daniel-brito}} & \hspace{0.45cm}
+  \faPaperPlane{\hspace{0.2cm}\href{https://t.me/danielhbrito}{danielhbrito}}
+\end{tabular}
+
+%-----------EXPERIENCE-----------------
+\section{\faBriefcase \hspace{0.2cm} Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Federal University of Ceará}{\faMapMarker \hspace{0.1cm} Crateús, CE}
+      {Software Developer Intern}{\faCalendar \hspace{0.1cm} Jan 2020 - Dec 2020}
+      \begin{itemize}
+          \item Our team developed a web and mobile application to facilitate the patient admission process at the Pró-Hemoce Institute. Despite my affinity for learning Front-end subjects, there was also a contact with technologies and concepts related to the Back-end and DevOps. All of this, following some agile methodologies principles, such as Scrum and Kanban. \\
+          \begin{itemize}
+              \item Android (Java), Retrofit, RealmDB
+              \item UI/UX Design, Figma, ReactJS, Redux, TypeScript, Material-UI
+              \item Spring Framework, Hibernate, MySQL, FlyWay, Docker, JWT, Keycloak, MinIO, MQTT
+              \item Git, GitLab
+          \end{itemize}
+      \end{itemize}
+      
+    \vspace{-0.2cm}
+    \divider
+      
+    \resumeSubheading
+      {CPFL Renováveis}{\faMapMarker \hspace{0.1cm} São Paulo, SP}
+      {Office Assistant}{\faCalendar \hspace{0.1cm} May 2011 - Feb 2017}
+        \begin{itemize}
+            \item Correspondence flow control (ANEEL, ONS, MME).
+            \item Payments (taxes, associative contributions, consulting, SAP ERP).
+            \item Informative (Diário Oficial da União, Canal Energia).
+            \item External services (Registry office, post office).
+        \end{itemize}
+      
+    \vspace{-0.2cm}
+    \divider
+      
+    \resumeSubheading
+      {CAMP Pinheiros / ERSA Energias Renováveis}{\faMapMarker \hspace{0.1cm} São Paulo, SP}
+      {Apprentice}{\faCalendar \hspace{0.1cm} Jul 2009 - May 2011}
+        \begin{itemize}
+            \item General administrative tasks.
+        \end{itemize}
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{\faUniversity \hspace{0.2cm} Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Federal University of Ceará}{\faMapMarker \hspace{0.1cm} Crateús, CE}
+      {Bachelor in Computer Science}{\faCalendar \hspace{0.1cm} 2017 - 2021}
+      \begin{itemize}
+          \item \textbf{Scholarships}
+            \begin{itemize}
+            \resumeScholarship
+                {Program for Beginning Teachers:}{\faCalendar \hspace{0.1cm} \textit{\small Feb 2019 - Dec 2019}}
+                {Academic mentoring for IT and engineering courses (C and Python).}{}
+            
+            \resumeScholarship
+                {Program of Academic Initiation:}{\faCalendar \hspace{0.1cm} \textit{\small Apr 2018 - Dec 2018}}
+                {Practical studies of 3D modeling and Virtual Reality using Blender.}{}
+        
+            \resumeScholarship
+                {Program of Academic Initiation:}{\faCalendar \hspace{0.1cm} \textit{\small Jun 2017 - Dec 2017}}
+                {Development of educational platform using Semantic UI and AngularJS.}{}
+            \end{itemize}
+      \end{itemize}
+      
+      \begin{itemize}
+          \item \textbf{Volunteer}
+          \begin{itemize}
+            \item \textbf{GEMP:} Group of studies for the SBC Programming Marathon. \href{https://github.com/GEMP-UFC-Crateus}{\faInfoCircle}
+          \end{itemize}
+      \end{itemize}
+      
+    \vspace{-0.2cm}
+    \divider
+      
+    \resumeSubheading
+      {Faculty of Tecnology}{\faMapMarker \hspace{0.1cm} São Paulo, SP}
+      {Technologist in Analysis and Systems Development}{\faCalendar \hspace{0.1cm} 2012 - 2016}
+      \begin{itemize}
+          \item Unfinished.
+      \end{itemize}
+
+  \resumeSubHeadingListEnd
+  
+%--------LANGUAGES------------
+\section{\faGlobe \hspace{0.2cm} Languages}
+%----------Location and contacts-----------------
+\begin{tabular}{c c c c}
+    \textbf{Portuguese:} Native & \hspace{2.15cm}
+    \textbf{English:} Advanced & \hspace{2.15cm}
+    \textbf{Spanish:} Basic & \hspace{2.15cm}
+    \textbf{French:} Basic
+\end{tabular}
+
+%--------SKILLS------------
+\section{\faPuzzlePiece \hspace{0.2cm} Skills}
+  Main knowledge that I've been acquiring while studying and working on personal and professional projects as a software developer.
+  \resumeSubHeadingListStart
+    \resumeSubItem {Programming Languages:}{C, Java, C++, JavaScript, Python.}
+    \resumeSubItem {Front-end:}{HTML5, CSS3, Bootstrap, Material-UI, ReactJS, Styled Components, TypeScript, Sass, JQuery.}
+    \resumeSubItem {Graphic Design:}{Figma, Photoshop, Inkscape, Blender.}
+    \resumeSubItem {Mobile:}{Android, Retrofit, RealmDB.}
+    \resumeSubItem {Back-end:}{Firebase, Spring Framework, MySQL.}
+    \resumeSubItem {DevOps:}{Docker, Git, GitLab}
+    \resumeSubItem {Soft Skills:}{Teamwork, communication, organization, creativity, critical thinking.}
+    
+    \vspace{0.3cm}
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------------
+\section{\faRocket \hspace{0.2cm} Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Tecnology}{}
+        \begin{itemize}
+            \item \textbf{HáLugar:} Housing app for students. \href{https://play.google.com/store/apps/details?id=br.ufc.crateus.halugar}{\faInfoCircle}
+            \item \textbf{Compixelar:} Development of multimedia experiments using Processing. \href{https://medium.com/@danielhbrito}{\faInfoCircle}
+        \end{itemize}
+    \resumeSubItem{Education}{}
+        \begin{itemize}
+            \item \textbf{sTuring:} Scientific divulgation. \href{https://www.instagram.com/sturing.compsci/}{\faInfoCircle}
+            \item \textbf{YouTube Channel:}  Programming tutorials for beginners. \href{https://www.youtube.com/channel/UC4y3uq1d7MKDYs1LbI44Vng}{\faInfoCircle}
+        \end{itemize}
+    \resumeSubItem{Arts}{}
+        \begin{itemize}
+            \item \textbf{Aluminions:} Creation of characters using aluminum seals. \href{https://www.instagram.com/aluminions.13/}{\faInfoCircle}
+            \item \textbf{Sarau do Grajaú:} Mediation of poetic meetings and production of Grajaú em Foco. \href{https://www.facebook.com/Sarau-do-Graja\%C3\%BA-191479077716775}{\faInfoCircle} 
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{\faTrophy \hspace{0.2cm} Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Best Work:}
+      {Practical studies of 3D modeling and Virtual Reality using Blender" during the 3rd edition of Encontros Universitários at the Federal University of Ceará - Crateús Campus.}
+    \resumeSubItem{13nho:}
+      {Champion of Slam do 13 (June 2016 edition) in the short poems category.}
+    \vspace{0.3cm}
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{\faRocket \hspace{0.2cm} Publications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Books}{}
+        \begin{itemize}
+            \item \textbf{A LER VAZIOS (2016):} Poetic and visual experiments.
+            \item \textbf{PROTESTIZANDO (2015):} Compilation of poems.
+        \end{itemize}
+    \resumeSubItem{Anthologies}{}
+        \begin{itemize}
+            \item \textbf{Poesia na Faixa:} Organized by Poetas do Tietê.
+            \item \textbf{180 Gramas:} Organized by Sarau do Vinil.
+        \end{itemize}
+  \resumeSubHeadingListEnd
+
+%-----------WORKSHOPS-----------------
+\section{\faUsers \hspace{0.2cm} Workshops}
+    \resumeSubHeadingListStart
+        \resumeWorkshops
+            {Introduction to Digital Art with Blender:}{\faMapMarker \hspace{0.1cm} Federal University of Ceará}
+            {Presentation of basic resources such as the creation and animation of digital objects.}{\faCalendar \hspace{0.1cm} Feb 2020}
+    \resumeSubHeadingListEnd
+
+%-----------OTHER INTERESTS-----------------
+\section{\faHeart \hspace{0.2cm} Other Interests}
+    Generative design, philosophy, literature, chess, astronomy, competitive programming, sports, travelling, cinema.
+  
+%-------------------------------------------
+\end{document}
