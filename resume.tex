@@ -17,6 +17,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
+\usepackage[document]{ragged2e}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -104,57 +105,31 @@
 \textbf{\huge Daniel Brito} \\ 
 \textbf{Front-end and Android developer • Visual artist • Writer} \\
   
-\vspace{0.2cm}
+\vspace{0.2cm} % Space between sections
 
 %----------Location and contacts-----------------
 \begin{tabular}{c c c c c}
     \faMapMarker{\hspace{0.1cm} Ceará, Brazil} & \hspace{0.45cm}
-    \faGithub{\hspace{0.2cm}\href{https://danielbrito.github.io/home}{danielbrito.github.io}} & \hspace{0.45cm}
+    \faGithub{\hspace{0.2cm}\href{https://danielbrito.github.io}{danielbrito.github.io}} & \hspace{0.45cm}
     \faEnvelope{\hspace{0.2cm}\href{mailto:danielhbrito@outlook.com}{danielhbrito@outlook.com}} & \hspace{0.45cm}
     \faLinkedin{\hspace{0.2cm}\href{https://www.linkedin.com/in/daniel-brito}{daniel-brito}} & \hspace{0.45cm}
     \faPaperPlane{\hspace{0.2cm}\href{https://t.me/danielhbrito}{danielhbrito}}
 \end{tabular}
 
-\vspace{0.3cm}
+\vspace{0.1cm} % Space between sections
+
+% Justifying all the content:
+\justify
 
 %--------PROFILE------------
 \section{\faUser \hspace{0.2cm} \Large Profile}
-Passionate about learning and creating things, both in the fields of art and technology. Currently, focusing on topics concerning front-end development of web and mobile applications, but following the steps to become a full-stack developer.
+Passionate about learning and creating things, both in the fields of art and technology. Furthermore, in order to consolidate some skills, enjoys sharing knowledge through teaching. Currently, focusing on topics concerning front-end development of web and mobile applications, but following the steps to become a full-stack developer.
 
-\vspace{0.4cm}
-
-%-----------EXPERIENCE-----------------
-\section{\faBriefcase \hspace{0.2cm} \Large Experience}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-        {Federal University of Ceará}{\faMapMarker \hspace{0.1cm} Crateús, CE - Remote}
-        {Software Developer Intern}{\faCalendar \hspace{0.1cm} Jan 2020 - Dec 2020}
-        
-        \begin{itemize}
-            \item Our team developed a web and mobile application to optimize the patient admission process at Instituto Pró-Hemoce. Despite the affinity for learning front-end subjects, there was also a contact with concepts and technologies related to the back-end and DevOps. During this process, we followed some agile methodologies principles, such as Scrum and Kanban. \\
-            \begin{itemize}
-                \item \textbf{Mobile:} Android (Java), Retrofit, Realm.
-                \item \textbf{Web:} ReactJS, Redux, TypeScript, Material-UI.
-                \item \textbf{Server:} Spring Framework, Hibernate, MySQL, FlyWay, JWT, Keycloak, MinIO, MQTT.
-                \item \textbf{DevOps:} Docker, Git, GitLab.
-            \end{itemize}
-        \end{itemize}
-      
-    \resumeSubheading
-    {CPFL Renováveis}{\faMapMarker \hspace{0.1cm} São Paulo, SP}
-    {Office Assistant}{\faCalendar \hspace{0.1cm} May 2011 - Feb 2017}
-        \begin{itemize}
-            \item Correspondence flow control (Excel, archive).
-            \item Payments (SAP ERP, taxes, associative contributions, consulting).
-            \item Mailing of daily news (Diário Oficial da União, Canal Energia).
-            \item External services (Notary's office).
-        \end{itemize}
-        
-        \vspace{0.2cm}
-    \resumeSubHeadingListEnd
+\vspace{0.2cm} % Space between sections
 
 %-----------EDUCATION-----------------
 \section{\faGraduationCap \hspace{0.2cm} \Large Education}
+
     \resumeSubHeadingListStart
         \resumeSubheading
         {Federal University of Ceará}{\faMapMarker \hspace{0.1cm} Crateús, CE}
@@ -183,11 +158,50 @@ Passionate about learning and creating things, both in the fields of art and tec
                 \end{itemize}
         \end{itemize}
         
-        \vspace{0.1cm}
+        \vspace{0.01cm} % Space between sections
     \resumeSubHeadingListEnd
-  
+
+%-----------EXPERIENCE-----------------
+\section{\faBriefcase \hspace{0.2cm} \Large Experience}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Federal University of Ceará}{\faMapMarker \hspace{0.1cm} Crateús, CE - Remote}
+        {Software Developer Intern}{\faCalendar \hspace{0.1cm} Jan 2020 - Dec 2020}
+        
+        \begin{itemize}
+            \item Development of web and mobile applications to optimize the patient admission process at Instituto Pró-Hemoce. Some features include user management, notifications, chatbot, and generation of reports. Despite the affinity for learning front-end subjects, there was also a contact with concepts and tools related to the back-end and DevOps, as well as some agile methodologies principles, such as Scrum and Kanban.
+            \begin{itemize}
+                \item \textbf{Mobile:} Android (Java), Retrofit, Realm.
+                \item \textbf{Web:} ReactJS, Redux, TypeScript, Material-UI.
+                \item \textbf{Server:} Spring Framework, Hibernate, MySQL, FlyWay, JWT, Keycloak, MinIO, MQTT.
+                \item \textbf{DevOps:} Docker, Git, GitLab.
+            \end{itemize}
+        \end{itemize}
+    \resumeSubHeadingListEnd
+    
+    \vspace{-0.3cm}
+    
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Instituto Pró-Hemoce}{\faMapMarker \hspace{0.1cm} Fortaleza, CE - Remote}
+        {Software Developer Intern}{\faCalendar \hspace{0.1cm} Feb 2021 - Currently}
+        
+        \begin{itemize}
+            \item Improvements on RHeuni, a Human Resources management platform, which includes an agenda for collaborators, room reservation, storage of meetings, workshops, and other features.
+            \begin{itemize}
+                \item \textbf{Front-end:} Angular, TypeScript, Clarity.
+                \item \textbf{Back-end:} Spring Framework, MySQL.
+                \item \textbf{DevOps:} Git, GitLab.
+            \end{itemize}
+            
+            \vspace{0.02cm} % Space between sections
+        \end{itemize}
+    \resumeSubHeadingListEnd
+
 %--------LANGUAGES------------
-\section{\faGlobe \hspace{0.2cm} Languages}
+\section{\faGlobe \hspace{0.2cm} \Large Languages}
+
 \begin{tabular}{c c c c}
     \textbf{Portuguese:} Native & \hspace{2.15cm}
     \textbf{English:} Advanced & \hspace{2.15cm}
@@ -197,27 +211,32 @@ Passionate about learning and creating things, both in the fields of art and tec
 
 %--------SKILLS------------
 \section{\faPuzzlePiece \hspace{0.2cm} \Large Skills}
-    Besides learning other topics, these are the main knowledge that I've been applying while working on personal and professional projects as a software developer.
+
+    Main knowledge applied to personal and professional projects as a software developer, besides other topics from a personal self-learning guide. \href{https://github.com/DanielBrito/self-learning}{\scriptsize \faExternalLink}
+    
     \resumeSubHeadingListStart
         \resumeSubItem {Programming Languages:}{C, Java, C++, JavaScript, Python.}
         \resumeSubItem {Front-end:}{HTML, CSS, Bootstrap, Material-UI, ReactJS, Styled Components, TypeScript.}
         \resumeSubItem {Graphic Design:}{Figma, Photoshop, Inkscape, Blender.}
-        \resumeSubItem {Mobile:}{Android, Retrofit, Glide, PhotoView, Compressor, Google Maps, Realm.}
+        \resumeSubItem {Mobile:}{Android, Retrofit, Realm.}
         \resumeSubItem {Back-end:}{Firebase, Spring Framework, MySQL.}
         \resumeSubItem {DevOps:}{Docker, Git, GitHub, GitLab.}
         \resumeSubItem {Tools:}{Insomnia, MySQL Workbench.}
         \resumeSubItem {Soft Skills:}{Teamwork, communication, organization, creativity, critical thinking.}
     \resumeSubHeadingListEnd
   
-    \vspace{0.3cm}
+\vspace{0.01cm} % Space between sections
 
 %-----------PROJECTS-----------------
 \section{\faRocket \hspace{0.2cm} \Large Projects}
+
     \resumeSubHeadingListStart
         \resumeSubItem{Technology}{}
             \begin{itemize}
-                \item \textbf{HáLugar:} Housing app for students. Developed for Android platform using technologies such as Google Maps, Nominatim API, Glide, PhotoView, and Firebase (Auth, Realtime Database, Storage). \href{https://play.google.com/store/apps/details?id=br.ufc.crateus.halugar}{\scriptsize \faExternalLink}
+                \item \textbf{HáLugar:} Housing app for students. Developed for Android platform using Java and technologies such as Google Maps, Nominatim API, Glide, PhotoView, Compressor, and Firebase (Auth, Realtime Database, Storage). \href{https://play.google.com/store/apps/details?id=br.ufc.crateus.halugar}{\scriptsize \faExternalLink}
                 \item \textbf{Compixelar:} Development of multimedia experiments using Processing. \href{https://medium.com/@danielhbrito}{\scriptsize \faExternalLink}
+                \item \textbf{Fire Tasks:} Task manager built with ReactJS, Styled Components and Firestore. \href{https://github.com/DanielBrito/fire-tasks}{\scriptsize \faExternalLink}
+                \item \textbf{Home:} Refactored version of my first website, using ReactJS and Material-UI. \href{https://danielbrito.github.io/home/}{\scriptsize \faExternalLink}
             \end{itemize}
             
         \resumeSubItem{Education}{}
@@ -226,53 +245,53 @@ Passionate about learning and creating things, both in the fields of art and tec
                 \item \textbf{YouTube Channel:}  Programming tutorials for beginners. \href{https://www.youtube.com/channel/UC4y3uq1d7MKDYs1LbI44Vng}{\scriptsize \faExternalLink}
             \end{itemize}
             
-        \resumeSubItem{Art}{}
+        \resumeSubItem{Visual Arts}{}
             \begin{itemize}
                 \item \textbf{Aluminions:} Creation of characters using aluminum seals. \href{https://www.instagram.com/aluminions.13/}{\scriptsize \faExternalLink}
             \end{itemize}
-        
-        \vspace{0.2cm}
-    \resumeSubHeadingListEnd
-  
-%-----------AWARDS-----------------
-\section{\faTrophy \hspace{0.2cm} \Large Awards}
-    \resumeSubHeadingListStart
-        \resumeSubItem{Best Work:}
-        {Project ``Practical studies of 3D modeling and Virtual Reality using Blender'' during the 3rd edition of Encontros Universitários at the Federal University of Ceará - Crateús Campus.}
-    
-        \vspace{0.6cm}
-  \resumeSubHeadingListEnd
-
-%-----------PUBLICATIONS-----------------
-\section{\faBook \hspace{0.2cm} \Large Publications}
-    \resumeSubHeadingListStart
-        \resumeSubItem{Books}{}
-            \begin{itemize}
-                \item \textbf{A Ler Vazios:} Poetic and visual experiments. \hfill \faCalendar \hspace{0.1cm} 2016
-                \item \textbf{Protestizando:} Compilation of first poems. \hfill \faCalendar \hspace{0.1cm} 2015
-            \end{itemize}
-        \resumeSubItem{Anthologies}{}
-            \begin{itemize}
-                \item \textbf{180 Gramas:} Organized by Sarau do Vinil. \hfill \faCalendar \hspace{0.1cm} 2016
-                \item \textbf{Poesia na Faixa:} Organized by Poetas do Tietê. \hfill \faCalendar \hspace{0.1cm} 2015
-            \end{itemize}
-    
-        \vspace{0.2cm}
+            
+            \vspace{0.05cm} % Space between sections
     \resumeSubHeadingListEnd
 
 %-----------WORKSHOPS-----------------
 \section{\faUsers \hspace{0.2cm} \Large Workshops}
+
     \resumeSubHeadingListStart
         \resumeWorkshops
             {Introduction to Digital Art with Blender:}{\faMapMarker \hspace{0.1cm} Federal University of Ceará}
             {Presentation of basic resources like creating and animating digital objects.}{\faCalendar \hspace{0.1cm} Feb 2020}
             
-        \vspace{0.2cm}
+            \vspace{0.05cm} % Space between sections
     \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{\faTrophy \hspace{0.2cm} \Large Awards}
+    \resumeSubHeadingListStart
+        \resumeSubItem{Best Work:}
+        {Project ``Practical studies of 3D modeling and Virtual Reality using Blender'' during the 3rd edition of Encontros Universitários at the Federal University of Ceará - Crateús Campus.}
+        
+        \vspace{0.5cm}
+    \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS (Already on my website)-----------------
+% \section{\faBook \hspace{0.2cm} \Large Publications}
+%     \resumeSubHeadingListStart
+%         \resumeSubItem{Books}{}
+%             \begin{itemize}
+%                 \item \textbf{A Ler Vazios:} Poetic and visual experiments. \hfill \faCalendar \hspace{0.1cm} 2016
+%                 \item \textbf{Protestizando:} Compilation of first poems. \hfill \faCalendar \hspace{0.1cm} 2015
+%             \end{itemize}
+%         \resumeSubItem{Anthologies}{}
+%             \begin{itemize}
+%                 \item \textbf{180 Gramas:} Organized by Sarau do Vinil. \hfill \faCalendar \hspace{0.1cm} 2016
+%                 \item \textbf{Poesia na Faixa:} Organized by Poetas do Tietê. \hfill \faCalendar \hspace{0.1cm} 2015
+%             \end{itemize}
+%     \resumeSubHeadingListEnd
 
 %-----------OTHER INTERESTS-----------------
 \section{\faThumbsUp \hspace{0.2cm} \Large Other Interests}
-    Generative design, chess, competitive programming, astronomy, philosophy, literature, sports, travelling, cinema.
+
+    Generative design, competitive programming, chess, astronomy, philosophy, literature, sports, travelling, cinema.
   
 %-------------------------------------------
 \end{document}
