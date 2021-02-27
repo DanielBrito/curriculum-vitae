@@ -1,3 +1,3 @@
 # :necktie: My Résumé
 
-Updated on Feb/2021
+Updated on February/2021
